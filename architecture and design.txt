@@ -1,0 +1,11 @@
+Architecture
+The Rest API follows a typical client-server architecture, where the client sends HTTP requests to the server, which then processes those requests and sends back a response. The Rest API uses a stateless architecture, meaning that the server does not store any session information between requests. Instead, each request contains all the information needed by the server to process that request.
+
+Design
+The Rest API is designed using the Model-View-Controller (MVC) architectural pattern. In this pattern, the application is divided into three parts: the Model, the View, and the Controller.
+
+The Model contains the data and the logic for manipulating that data. In this Rest API, the Model is represented by the CandidatesManager class, which manages the candidate data.
+
+The View is responsible for presenting the data to the user. In this Rest API, the View is represented by the HTTP responses sent back by the server.
+
+The Controller is responsible for handling user input and updating the Model accordingly. In this Rest API, the Controller is represented by the RestController class, which handles the HTTP requests from the client and updates the CandidatesManager accordingly.
